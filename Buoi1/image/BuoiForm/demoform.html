@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="demoform.css">
+    <!--<style>
+        form 
+        {
+            background-color:rgb(179,206, 245);
+            border: 1px solid;
+
+        }
+        input:hover 
+        {
+            background-color:yellow;
+            border: 1px solid red;
+
+        }
+    </style>-->
+  
 </head>
 <body>  
-    <form action="#">
+    <!--<form action="#" style="background:wheat; border: 1px solid;" >-->
+    <form action="">
         <table>
             <tr>
                 <div>
                     <td><label for="name">Ho va ten:</label></td>
-                    <td><input type="text" id="name" name="name" placeholder="Ho va ten"></td>
+                    <td><input class="name-phone" id="name" name="name" placeholder="Ho va ten"></td>
                 </div>
             </tr>
             <tr>
                 <div>
                 <td><label for="phone">So dien thoai:</label></td>
-                <td><input type="number" id="phone" name="phone" placeholder="So dien thoai"></td>
+                <td><input class="name-phone" type="number" id="phone" name="phone" placeholder="So dien thoai"></td>
             </div>
             </tr>
             <tr>
@@ -39,7 +56,7 @@
                     <input type="radio" name="gender" value="2">Female
                     <input type="radio" name="gender" value="0" >Other
             </div>
-            <div>
+            <div id="style">
                     <label for=""><b>Chu de quan tam:</b> </label> <br>
                     <input type="checkbox" name="type" value="1" checked>Phan mem
                     <input type="checkbox" name="type" value="2" >Tai chinh

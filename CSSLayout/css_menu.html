@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    .menu1 {
+        list-style-type: none;
+        color: aliceblue;
+        font-size: 22px;
+    }
+    .menu1 > li {
+        display: inline;
+        padding: 5px;
+    }
+    .menu1>li>ul {
+        list-style-type: none;
+        display: none;
+    }
+    .menu1_firstchild:hover .menu2 {
+        display: block;
+    }
+    .menu1_firstchild, .menu8_firstchild,.menu6_firstchild,.menu4_firstchild, .menu10 {
+        position: relative;
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 20px;
+        font-style: bold;
+        width: 20px;
+    }
+    .menu2, .menu9, .menu7, .menu5 {
+        position: absolute;
+        top: 25px;
+        left: 70px;
+        width: max-content;
+        padding: 5px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    .menu2_lastchild {
+        position: relative;
+    }
+    .menu3 {
+        display: none;
+        position: absolute;
+        top: 25px;
+        list-style-type: none;
+        width: max-content;
+    }
+    .menu2_lastchild:hover .menu3, .menu8_firstchild:hover .menu9,.menu6_firstchild:hover .menu7,.menu4_firstchild:hover .menu5 {
+        display: block;
+    }
+    li:hover {
+    color:rgb(42, 52, 138);
+    }
+    li {
+        background-color: blue;
+        color: beige;
+    }
+    /*.menu1>li>ul>li {
+        display: none;
+    }*/
+</style>
+<body>
+    <ul class="menu1">
+        <li class="menu1_firstchild">KHOA HOC
+            <ul class="menu2">
+                <li>Ky su CNTT</li>
+                <li>Bootcamp fulltime</li>
+                <li>Bootcamp parttime</li>
+                <li class="menu2_lastchild">Khoa hoc tu xa 
+                    <ul class="menu3">
+                        <li>Nhap mon lap trinh</li>
+                        <li>Nhap mon html, css</li>
+                        <li>Nhap mon Data Analytic</li>
+                        <li>Nhap mon phat trien game</li>
+                        <li>Nhap mon Bootstrap</li>
+                        <li>Nhap mon Git va Github</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="menu4_firstchild" >LICH KHAI GIANG
+            <ul class="menu5">
+                <li>Codegym Ha Noi</li>
+                <li>Codegym Sai Gon</li>
+                <li>Codegym Online</li>
+                <li >Codegym Da Nang</li>
+                <li >Codegym Hue</li>
+            </ul>
+        </li>
+        <li class="menu6_firstchild" >KIEN THUC
+            <ul class="menu7">
+                <li>Chia se kien thuc</li>
+                <li>Tai nguyen lap trinh</li>
+            </ul>
+        </li>
+        <li class="menu10">TIN TUC</li>
+        <li class="menu8_firstchild">VE CODE
+            <ul class="menu9">
+                <li>Gioi thieu</li>
+                <li>Tai sao lai nen chon Codegym</li>
+                <li>Mo hinh Coding Bootcamp</li>
+            </ul>
+        </li> 
+    </ul>
+</body>
+</html>

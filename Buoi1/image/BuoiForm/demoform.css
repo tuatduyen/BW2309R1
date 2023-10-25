@@ -1,0 +1,25 @@
+form 
+{
+    background:rgb(192, 164, 192);
+    border: 1px solid;
+
+}
+input:hover 
+{
+    background-color:yellow;
+    border: 1px solid red;
+
+}
+#style {
+    border: 1px solid;
+}
+.name-phone:hover 
+{
+    background-color:hsl(256, 100%, 50%);
+    border: 1px solid red;
+
+}
+textarea, input {
+    background-color: antiquewhite;
+    color: blue;
+}

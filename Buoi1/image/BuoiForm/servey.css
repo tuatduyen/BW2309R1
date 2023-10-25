@@ -1,0 +1,63 @@
+.survey th {
+    text-align: left;
+}
+.survey td {
+    text-align: center;
+}
+.survey, .survey th, .survey td {
+    border: 1px solid rgb(78, 163, 233);
+}
+option, input, select {
+    background-color: rgb(233, 239, 247);
+}
+.survey {
+    width: 100%;
+    border-collapse: collapse;
+}
+textarea {
+    width: 100%;
+}
+#age {
+    width: 20%;
+}
+form ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+form li:focus {
+    background-color: yellow;
+}
+li:click {
+    background-color: rgb(135, 170, 222);
+}
+#style1 {
+    background-color: rgb(196, 193, 193);
+}
+form ul:after, form li:after, form div:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.noI form li, .altInstruct form li {
+    width: auto !important;
+    background-color: antiquewhite;
+}
+form li {
+    position: relative;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+form li:hover {
+    background-color:rgb(236, 201, 147);
+}
+form li div {
+        margin: 0;
+        padding: 0;
+        color: #444;   
+}
+#style {
+    text-align: left;
+}
