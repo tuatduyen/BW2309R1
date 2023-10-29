@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+.head,.left, .head-link {
+   margin-bottom: 10px;
+}
+div.head {
+    background-color: rgb(238, 233, 233);
+    border: 1px solid gray;
+}
+
+div.head-link {
+    /*background-color: darkgrey;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+div.head-link-a {
+    text-align: center;
+    font-size: large;
+}
+.footer {
+    clear: both;
+    height: 50px;
+    /*background-color: sienna*/
+    background-color: slategray;
+}
+.left-img > img {
+    width: 100%;
+    margin-top: 1px;
+}
+#style {
+    text-align: center;
+}
+iframe {
+    width: 100%;
+    height: 400px;
+}
+tr {
+    margin: 20px;
+}
+.content-param {
+    padding-top: 5px;
+    width: 100%;
+    text-align:justify;
+}
+.left-container {
+    height: 700px;
+    overflow: scroll;
+}
+/*RBW*/ 
+
+@media screen and (min-width:768px) {
+    .left {
+        padding: 10px;
+        width: 30%;
+        height: 700px;
+        float: left;
+    }
+    .content {
+        padding: 20px;
+        width: 70%;
+        float: left;
+        padding-left: 40px;
+    }
+}
+/*Ipad*/
+@media screen and (max-width:768px) {
+    .left {
+        padding: 10px;
+        width: 50%;
+        height: 700px;
+        float: left;
+    }
+    .content {
+        padding: 20px;
+        width: 50%;
+        float: left;
+        padding-left: 40px;
+    }
+}
+/*Dien thoai*/
+@media screen and (max-width:576px) {
+    .left {
+        padding: 10px;
+        width: 100%;
+        height: 700px;
+        float: left;
+    }
+    .content {
+        padding: 20px;
+        width: 100%;
+        float: left;
+        padding-left: 40px;
+    }
+}
