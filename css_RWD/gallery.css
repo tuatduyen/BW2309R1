@@ -3,20 +3,25 @@
 }
 .image {
     float: left;
+    padding: 5px;
 }
 p {
     text-align: center;
 }
-/*.gallery:hover {
+.gallery:hover {
     border: 1px solid rgb(94, 87, 87);
-    .gallery {
-    border: 1px solid rgb(37, 35, 35);
-    padding-bottom: 10px;
 }
-}*/
-
+.gallery {
+    border: 1px solid rgb(37, 35, 35);
+}
+img {
+    width: 100%;
+}
+#style {
+    text-align: justify;
+}
 /* maytinhbangcanhan */
-@media screen and (max-width:992px){
+@media screen and (min-width:700px){
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
     .col-md-3 {width: 25%;}
@@ -30,9 +35,8 @@ p {
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
 }
-
 /* maytinhbang */
-@media screen and (max-width:768px){
+@media screen and (max-width:700px){
     .col-sm-1 {width: 8.33%;}
     .col-sm-2 {width: 16.66%;}
     .col-sm-3 {width: 25%;}
@@ -48,7 +52,7 @@ p {
 }
 
 /* dienthoai */
-@media screen and (max-width:576px){
+@media screen and (max-width:500px){
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -61,4 +65,8 @@ p {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+.gallery:after {
+    clear: both;
+    display: table;
 }

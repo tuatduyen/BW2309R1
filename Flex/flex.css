@@ -1,0 +1,117 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.resite {
+    padding: 10px;
+    background-color: yellow;
+}
+p {
+    text-align: center;
+}
+.header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 255, 134);
+    height: 100px;
+}
+.header-main div h2 {
+    margin-bottom: 7%;
+    color: white;
+}
+.header-main div p {
+    font-size: 10px;
+    color: white;
+}
+nav {
+    background-color: black;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+li {
+    color: white;
+    padding: 20px;
+}
+.content {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    height: 800px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.content-sidebar {
+    flex: 30%;
+    background-color: rgb(221, 219, 219);
+}
+.flex-item {
+    background-color: rgb(230, 226, 226);
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+.photo {
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.image {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.content-main {
+    flex: 70%;
+}
+.content-main>p, .content-sidebar>p {
+    text-align: left; 
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h3 {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h5 {
+    margin-top: 20px;
+    margin-left: 20px; 
+}
+footer {
+    display: flex;
+    height: 100px;
+    background-color: rgb(177, 171, 171);
+    justify-content: center;
+}
+footer h2 {
+    align-self: center;
+}
+/*@media screen and (max-width: 768px) {
+    .content-sidebar {
+        flex: 100%;
+    }
+    .content-main {
+        flex: 100%;
+        
+    }
+}*/
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
