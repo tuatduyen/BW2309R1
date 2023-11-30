@@ -1,0 +1,11 @@
+$var_color: rgb(25, 0, 255);
+@mixin style_paragraph($_color) {
+    font-size: 10px;
+    color: $_color;
+    font-family: Arial, Helvetica, sans-serif;
+}
+%style_share {
+    border-radius: 50%;
+    background-color: yellowgreen;
+    color: hotpink;
+}

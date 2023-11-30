@@ -1,0 +1,118 @@
+* {
+    box-sizing:border-box;
+}
+//grid
+%style_grid {
+    position:absolute;
+    opacity:0.9;
+    width:auto;
+    left:8px;
+    right:10px;
+}
+//gridwapper
+%style_wrapper {
+    overflow:auto;
+    position:relative;
+    height:250px;
+}
+//gridcontent
+%style_gridcontent {
+    width:8.33%;
+    margin:0;
+    border-right:1px solid grey;
+    height:100%;
+    float:left;
+    background-color:#84c754;
+    background-color:#f1f1f1;
+}
+//gird_content_color_white
+%style_content {
+    background-color:#ffffff;
+    border:none;
+    @extend %style_gridcontent
+}
+//gird_content_color_blue
+%style_para{
+    background-color:#33b5e5;
+    border:none;
+    width:100%;
+}
+//style grid boder
+%style_border {
+    background-color:#ffffff;
+    border-right:1px solid #000000;
+    @extend %style_gridcontent
+}
+//gridwapper
+@mixin gridwrapper($_height) {
+    height: $_height;
+    @extend %style_wrapper
+}
+//gird_content_color_white
+@mixin content_background($_bcolor) {
+    width:100%;
+    background:$_bcolor;
+    border-right-color:transparent;
+    @extend %style_gridcontent
+}
+//gird_content_color_blue
+@mixin gridpara($_height) {
+    height: $_height;
+    @extend %style_para
+}
+.grid {
+    @extend %style_grid
+}
+.gridcontainer1 {
+    opacity:0.1;
+}
+//gridwaopper
+.gridwrapper1 {
+    @include gridwrapper(90px)
+}
+.gridwrapper2 {
+    @include gridwrapper(230px)
+}
+.gridwrapper3 {
+    @include gridwrapper(50px)
+}
+.gridwrapper4 {
+    @include gridwrapper(370px)
+}
+//gridcontent_color
+.gridcontent_color1 {
+    @include content_background(#9933cc)
+}
+.gridcontent_color2 {
+    @include content_background(#0099cc)
+}
+//gridcontent_color_white
+.gridcontent {
+    width:25%;
+    padding-top:15px;
+    @extend %style_content
+}
+.gridcontent_style {
+    @extend %style_content
+}
+//gird_content_color_blue
+.gridcontent_para {
+    @include gridpara(15%)
+}
+.gridcontent_para1 {
+    @include gridpara(92%)
+}
+.gridcontent_para2 {
+    margin-bottom:10px;
+    @include gridpara(15%)
+}
+//grid_boder
+.gridcontent_boder {
+    @extend %style_border
+}
+.gridcontent_boder1 {
+    border-left:1px solid #000000;
+    @extend %style_border
+}
+
+
